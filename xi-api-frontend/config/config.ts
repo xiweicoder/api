@@ -73,7 +73,7 @@ export default defineConfig({
    * @name layout 插件
    * @doc https://umijs.org/docs/max/layout-menu
    */
-  title: 'Qi-API 接口开放平台',
+  title: 'Xi-API 接口开放平台',
   layout: {
     locale: true,
     ...defaultSettings,
@@ -130,7 +130,7 @@ export default defineConfig({
     {
       requestLibPath: "import { request } from '@umijs/max'",
       schemaPath: 'http://localhost:7529/api/v3/api-docs',
-      projectName: 'qiApi-backend',
+      projectName: 'api-backend',
     },
   ],
   mfsu: {

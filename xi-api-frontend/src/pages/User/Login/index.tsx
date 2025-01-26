@@ -3,7 +3,7 @@ import {
   getCaptchaUsingGET,
   userEmailLoginUsingPOST,
   userLoginUsingPOST,
-} from '@/services/qiApi-backend/userController';
+} from '@/services/api-backend/userController';
 import { Link } from '@@/exports';
 import {
   AlipayCircleOutlined,
@@ -112,9 +112,9 @@ const Login: React.FC = () => {
             minWidth: 280,
             maxWidth: '75vw',
           }}
-          logo={<img alt="logo" src="/logo.gif" />}
-          title="Qi-API 接口开放平台"
-          subTitle={'Qi-API 接口开放平台致力于提供稳定、安全、高效的接口调用服务'}
+          logo={<img alt="logo" src="/logo.png" />}
+          title="Xi-API 接口开放平台"
+          subTitle={'Xi-API 接口开放平台致力于提供稳定、安全、高效的接口调用服务'}
           initialValues={{
             autoLogin: true,
           }}

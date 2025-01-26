@@ -24,14 +24,6 @@
     icon: 'RedditOutlined',
     component: './InterfaceSquare',
   },
-  { path: '/recharge/list', icon: 'PayCircleOutlined', name: '积分商城', component: './Recharge' },
-
-  {
-    path: '/order/list',
-    name: '我的订单',
-    icon: 'ProfileOutlined',
-    component: './Order/OrderList',
-  },
   {
     path: '/admin',
     name: '管理页',

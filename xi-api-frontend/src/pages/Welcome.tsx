@@ -1,5 +1,5 @@
 import GetGiftModal from '@/components/Gift/GetGift';
-import { getUserByInvitationCodeUsingPOST } from '@/services/qiApi-backend/userController';
+import { getUserByInvitationCodeUsingPOST } from '@/services/api-backend/userController';
 import { Link, useParams } from '@@/exports';
 import { useModel } from '@umijs/max';
 import { Card, theme, Typography } from 'antd';
@@ -135,7 +135,7 @@ const Welcome: React.FC = () => {
               color: token.colorTextHeading,
             }}
           >
-            <Title level={3}> 欢迎使用 Qi-API 接口开放平台 🎉</Title>
+            <Title level={3}> 欢迎使用 Xi-API 接口开放平台 🎉</Title>
           </div>
           <div
             style={{
@@ -149,30 +149,30 @@ const Welcome: React.FC = () => {
           >
             <Text strong>
               <Title level={4}>
-                Qi-API 接口开放平台是一个为用户和开发者提供全面API接口调用服务的平台 🛠
+                Xi-API 接口开放平台是一个为用户和开发者提供全面API接口调用服务的平台 🛠
               </Title>
               <Title level={5}>
                 😀
                 作为用户您可以通过注册登录账户，获取接口调用权限，并根据自己的需求浏览和选择适合的接口。您可以在线进行接口调试，快速验证接口的功能和效果。
                 <br />
                 💻 作为开发者 我们提供了
-                <a href="https://github.com/qimu666/qi-api-sdk" target="_blank" rel="noreferrer">
+                <a href="https://github.com/xiweicoder/api" target="_blank" rel="noreferrer">
                   客户端SDK
                 </a>
                 ， 通过
                 <Link to="/account/center">开发者凭证</Link>
                 即可将轻松集成接口到您的项目中，实现更高效的开发和调用。
                 <br />
-                🤝 您可以将自己的接口接入到Qi-API 接口开放平台平台上，并发布给其他用户使用。
+                🤝 您可以将自己的接口接入到Xi-API 接口开放平台平台上，并发布给其他用户使用。
                 您可以管理和各个接口，以便更好地分析和优化接口性能。
                 <br />
                 👌 我们还提供了
-                <a href={'https://doc.qimuu.icu'} target={'_blank'} rel="noreferrer">
+                <a href={'https://github.com/xiweicoder/api'} target={'_blank'} rel="noreferrer">
                   开发者在线文档
                 </a>
                 和技术支持，帮助您快速接入和发布接口。
                 <br />
-                🏁 无论您是用户还是开发者，Qi-API
+                🏁 无论您是用户还是开发者，Xi-API
                 接口开放平台都致力于提供稳定、安全、高效的接口调用服务，帮助您实现更快速、便捷的开发和调用体验。
               </Title>
             </Text>
@@ -186,7 +186,7 @@ const Welcome: React.FC = () => {
           >
             <InfoCard
               index={1}
-              href="https://api.qimuu.icu/"
+              href="https://github.com/xiweicoder/api"
               title={<Title level={5}>多样化的接口选择</Title>}
               desc={
                 <Text strong>
@@ -196,7 +196,7 @@ const Welcome: React.FC = () => {
             />
             <InfoCard
               index={2}
-              href="https://api.qimuu.icu/"
+              href="https://github.com/xiweicoder/api"
               title={<Title level={5}>在线调试功能</Title>}
               desc={
                 <Text strong>
@@ -206,7 +206,7 @@ const Welcome: React.FC = () => {
             />
             <InfoCard
               index={3}
-              href="https://api.qimuu.icu/"
+              href="https://github.com/xiweicoder/api"
               title={<Title level={5}>客户端SDK支持</Title>}
               desc={
                 <Text strong>
@@ -216,7 +216,7 @@ const Welcome: React.FC = () => {
             />
             <InfoCard
               index={4}
-              href="https://api.qimuu.icu/"
+              href="https://github.com/xiweicoder/api"
               title={<Title level={5}>开发者文档和技术支持</Title>}
               desc={
                 <Text strong>
@@ -226,7 +226,7 @@ const Welcome: React.FC = () => {
             />
             <InfoCard
               index={5}
-              href="https://api.qimuu.icu/"
+              href="https://github.com/xiweicoder/api"
               title={<Title level={5}>稳定和安全</Title>}
               desc={
                 <Text strong>

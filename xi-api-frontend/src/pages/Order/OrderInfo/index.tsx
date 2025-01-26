@@ -3,7 +3,7 @@ import {
   closedProductOrderUsingPOST,
   deleteProductOrderUsingPOST,
   getProductOrderByIdUsingGET,
-} from '@/services/qiApi-backend/orderController';
+} from '@/services/api-backend/orderController';
 import { history, useParams } from '@@/exports';
 import ProCard from '@ant-design/pro-card';
 import { Badge, Button, Card, Descriptions, message, Popconfirm, Spin, Tag, Tooltip } from 'antd';

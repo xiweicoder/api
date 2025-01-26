@@ -1,5 +1,5 @@
 import { valueLength } from '@/pages/User/UserInfo';
-import { userLogoutUsingPOST } from '@/services/qiApi-backend/userController';
+import { userLogoutUsingPOST } from '@/services/api-backend/userController';
 import { LoginOutlined, LogoutOutlined, UserOutlined } from '@ant-design/icons';
 import { history, useModel } from '@umijs/max';
 import { stringify } from 'querystring';

@@ -1,5 +1,5 @@
 import { valueLength } from '@/pages/User/UserInfo';
-import { getCaptchaUsingGET } from '@/services/qiApi-backend/userController';
+import { getCaptchaUsingGET } from '@/services/api-backend/userController';
 import { LockOutlined, MailOutlined } from '@ant-design/icons';
 import { LoginForm } from '@ant-design/pro-components';
 import { ProFormCaptcha, ProFormText } from '@ant-design/pro-form';

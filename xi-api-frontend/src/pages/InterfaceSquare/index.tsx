@@ -1,7 +1,7 @@
 import {
   listInterfaceInfoByPageUsingGET,
   listInterfaceInfoBySearchTextPageUsingGET,
-} from '@/services/qiApi-backend/interfaceInfoController';
+} from '@/services/api-backend/interfaceInfoController';
 import ProCard from '@ant-design/pro-card';
 import { history } from '@umijs/max';
 import { Badge, Card, Image, List, Spin } from 'antd';
@@ -102,8 +102,8 @@ const InterfaceSquare: React.FC = () => {
                   <Badge count={item.totalInvokes} overflowCount={999999999} color="#eb4d4b">
                     <Image
                       style={{ width: 80, borderRadius: 8, marginLeft: 10 }}
-                      src={item?.avatarUrl ?? 'https://img.qimuu.icu/typory/logo.gif'}
-                      fallback={'https://img.qimuu.icu/typory/logo.gif'}
+                      src={item?.avatarUrl ?? 'https://img.qimuu.icu/typory/logo.png'}
+                      fallback={'https://img.qimuu.icu/typory/logo.png'}
                       alt={item.name}
                       preview={false}
                     />

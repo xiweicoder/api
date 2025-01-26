@@ -11,7 +11,7 @@ import {
   onlineInterfaceInfoUsingPOST,
   updateInterfaceInfoAvatarUrlUsingPOST,
   updateInterfaceInfoUsingPOST,
-} from '@/services/qiApi-backend/interfaceInfoController';
+} from '@/services/api-backend/interfaceInfoController';
 import { PlusOutlined } from '@ant-design/icons';
 import type { ActionType, ProColumns } from '@ant-design/pro-components';
 import { ProTable } from '@ant-design/pro-components';

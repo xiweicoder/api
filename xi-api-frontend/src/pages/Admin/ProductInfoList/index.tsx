@@ -9,7 +9,7 @@ import {
   offlineProductInfoUsingPOST,
   onlineProductInfoUsingPOST,
   updateProductInfoUsingPOST,
-} from '@/services/qiApi-backend/productInfoController';
+} from '@/services/api-backend/productInfoController';
 import { PlusOutlined } from '@ant-design/icons';
 import type { ActionType, ProColumns } from '@ant-design/pro-components';
 import { ProTable } from '@ant-design/pro-components';

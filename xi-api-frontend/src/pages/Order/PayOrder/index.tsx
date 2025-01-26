@@ -9,7 +9,7 @@ import {
   createOrderUsingPOST,
   getProductOrderByIdUsingGET,
   queryOrderStatusUsingPOST,
-} from '@/services/qiApi-backend/orderController';
+} from '@/services/api-backend/orderController';
 import { useParams } from '@@/exports';
 import ProCard from '@ant-design/pro-card';
 import wechat from '../../../../public/assets/WeChat.jpg';

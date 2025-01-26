@@ -1,7 +1,7 @@
 import {
   getInterfaceInfoByIdUsingGET,
   invokeInterfaceUsingPOST,
-} from '@/services/qiApi-backend/interfaceInfoController';
+} from '@/services/api-backend/interfaceInfoController';
 import { Badge, Button, Card, Descriptions, Form, message, Spin, Table, Tabs, Tag } from 'antd';
 import React, { useEffect, useState } from 'react';
 
@@ -295,7 +295,7 @@ const InterfaceInfo: React.FC = () => {
           }
         >
           <Button size={'large'}>
-            <a target={'_blank'} href={'https://github.com/qimu666/qi-api-sdk'} rel="noreferrer">
+            <a target={'_blank'} href={'https://github.com/xiweicoder/api-sdk'} rel="noreferrer">
               <VerticalAlignBottomOutlined /> Java SDK
             </a>
           </Button>

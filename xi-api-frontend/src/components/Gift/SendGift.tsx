@@ -16,9 +16,9 @@ const SendGiftModal: React.FC<Props> = (props) => {
   const [api, contextHolder] = notification.useNotification();
 
   const randomTexts = [
-    '注册即送100金币💰奖励，Qi-API 接口开放平台为您提供稳定、安全、高效的接口调用服务！',
-    '免费领取100金币💰奖励，通过链接注册，Qi-API 接口开放平台为您提供稳定、安全、高效的接口调用服务！',
-    '通过链接注册，即可获得100金币💰奖励，Qi-API 接口开放平台为您提供稳定、安全、高效的接口调用服务！',
+    '注册即送100金币💰奖励，Xi-API 接口开放平台为您提供稳定、安全、高效的接口调用服务！',
+    '免费领取100金币💰奖励，通过链接注册，Xi-API 接口开放平台为您提供稳定、安全、高效的接口调用服务！',
+    '通过链接注册，即可获得100金币💰奖励，Xi-API 接口开放平台为您提供稳定、安全、高效的接口调用服务！',
   ];
   const [giftValue, setGiftValue] = useState(``);
 

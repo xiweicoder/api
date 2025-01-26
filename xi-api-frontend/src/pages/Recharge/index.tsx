@@ -1,6 +1,6 @@
 import KunCoin from '@/components/Icon/KunCoin';
-import { listProductInfoByPageUsingGET } from '@/services/qiApi-backend/productInfoController';
-import { getLoginUserUsingGET } from '@/services/qiApi-backend/userController';
+import { listProductInfoByPageUsingGET } from '@/services/api-backend/productInfoController';
+import { getLoginUserUsingGET } from '@/services/api-backend/userController';
 import ProCard, { CheckCard } from '@ant-design/pro-card';
 import { history, useModel } from '@umijs/max';
 import { Button, Card, message, Spin, Tooltip } from 'antd';

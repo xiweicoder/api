@@ -6,7 +6,7 @@ import { Docs, helloWord } from '@/components/RightContent';
 import NoFoundPage from '@/pages/404';
 import { valueLength } from '@/pages/User/UserInfo';
 import { requestConfig } from '@/requestConfig';
-import { getLoginUserUsingGET } from '@/services/qiApi-backend/userController';
+import { getLoginUserUsingGET } from '@/services/api-backend/userController';
 import {
   BarsOutlined,
   ExportOutlined,
@@ -19,7 +19,7 @@ import type { RunTimeLayoutConfig } from '@umijs/max';
 import { history } from '@umijs/max';
 import { FloatButton, message } from 'antd';
 import Settings from '../config/defaultSettings';
-import logo from '../public/logo.gif';
+import logo from '../public/logo.png';
 import { AvatarDropdown, AvatarName } from './components/RightContent/AvatarDropdown';
 
 const loginPath = '/user/login';
@@ -72,7 +72,7 @@ export const layout: RunTimeLayoutConfig = ({ initialState, setInitialState }) =
             tooltip={'📘 接口在线文档'}
             icon={<FileTextOutlined />}
             onClick={() => {
-              location.href = 'https://doc.qimuu.icu/';
+              location.href = 'https://github.com/xiweicoder/api';
             }}
           />
           <FloatButton
@@ -95,7 +95,7 @@ export const layout: RunTimeLayoutConfig = ({ initialState, setInitialState }) =
             tooltip={'查看本站技术及源码，欢迎 star'}
             icon={<GithubOutlined />}
             onClick={() => {
-              location.href = 'https://github.com/qimu666/qi-api';
+              location.href = 'https://github.com/xiweicoder/api';
             }}
           />
           <FloatButton

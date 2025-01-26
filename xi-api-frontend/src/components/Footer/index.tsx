@@ -14,27 +14,7 @@ const Footer: React.FC = () => {
         background: 'none',
       }}
       // @ts-ignore
-      copyright={
-        <>
-          {`${currentYear} ${defaultMessage}`} |{' '}
-          <a target={'_blank'} href={'https://beian.miit.gov.cn/'} rel="noreferrer">
-            {' '}
-            豫ICP备2023004098号-1
-          </a>
-          {' | '}
-          <a
-            target={'_blank'}
-            href={'https://www.beian.gov.cn/portal/registerSystemInfo?recordcode=41172702000163'}
-            rel="noreferrer"
-          >
-            <img
-              src="https://img.qimuu.icu/typory/%E5%A4%87%E6%A1%88%E5%9B%BE%E6%A0%87.png"
-              alt={'豫公网安备 41172702000163号'}
-            />{' '}
-            豫公网安备 41172702000163号
-          </a>
-        </>
-      }
+      copyright={<>{`${currentYear} ${defaultMessage}`}</>}
       links={[
         {
           key: 'github',
@@ -43,7 +23,7 @@ const Footer: React.FC = () => {
               <GithubOutlined /> 支持项目
             </Tooltip>
           ),
-          href: 'https://github.com/qimu666/qi-api',
+          href: 'https://github.com/xiweicoder/api',
           blankTarget: true,
         },
         {
@@ -53,7 +33,7 @@ const Footer: React.FC = () => {
               <WechatOutlined /> 联系作者
             </Tooltip>
           ),
-          href: 'https://img.qimuu.icu/typory/WeChat.jpg',
+          href: 'https://lfs-api.oss-cn-beijing.aliyuncs.com/interface/WeChat.jpg',
           blankTarget: true,
         },
       ]}

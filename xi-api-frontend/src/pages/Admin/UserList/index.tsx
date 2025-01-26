@@ -17,7 +17,7 @@ import {
   listUserByPageUsingGET,
   normalUserUsingPOST,
   updateUserUsingPOST,
-} from '@/services/qiApi-backend/userController';
+} from '@/services/api-backend/userController';
 
 const UserList: React.FC = () => {
   /**

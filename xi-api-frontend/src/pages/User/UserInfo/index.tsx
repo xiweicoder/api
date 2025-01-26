@@ -1,14 +1,14 @@
 import EmailModal from '@/components/EmailModal';
 import SendGiftModal from '@/components/Gift/SendGift';
 import { requestConfig } from '@/requestConfig';
-import { doDailyCheckInUsingPOST } from '@/services/qiApi-backend/dailyCheckInController';
+import { doDailyCheckInUsingPOST } from '@/services/api-backend/dailyCheckInController';
 import {
   getLoginUserUsingGET,
   updateUserUsingPOST,
   updateVoucherUsingPOST,
   userBindEmailUsingPOST,
   userUnBindEmailUsingPOST,
-} from '@/services/qiApi-backend/userController';
+} from '@/services/api-backend/userController';
 import { EditOutlined, PlusOutlined, VerticalAlignBottomOutlined } from '@ant-design/icons';
 import ProCard from '@ant-design/pro-card';
 import { history, useModel } from '@umijs/max';
@@ -327,15 +327,6 @@ const UserInfo: React.FC = () => {
           ref={ref1}
           extra={
             <>
-              <Tooltip title={'用于接收订单信息'}>
-                <Button
-                  onClick={() => {
-                    setOpenEmailModal(true);
-                  }}
-                >
-                  {loginUser?.email ? '更新邮箱' : '绑定邮箱'}
-                </Button>
-              </Tooltip>
               <Tooltip title={'提交修改的信息'}>
                 <Button style={{ marginLeft: 10 }} onClick={updateUserInfo}>
                   提交修改
@@ -387,14 +378,8 @@ const UserInfo: React.FC = () => {
               </Paragraph>
             </div>
             <div>
-              <h4>我的id：</h4>
+              <h4>我的ID：</h4>
               <Paragraph copyable={valueLength(loginUser?.id)}>{loginUser?.id}</Paragraph>
-            </div>
-            <div>
-              <h4>我的邮箱：</h4>
-              <Paragraph copyable={valueLength(loginUser?.email)}>
-                {valueLength(loginUser?.email) ? loginUser?.email : '未绑定邮箱'}
-              </Paragraph>
             </div>
           </Descriptions>
         </ProCard>
@@ -500,7 +485,7 @@ const UserInfo: React.FC = () => {
           bordered
         >
           <Button size={'large'}>
-            <a target={'_blank'} href={'https://github.com/qimu666/qi-api-sdk'} rel="noreferrer">
+            <a target={'_blank'} href={'https://github.com/xiweicoder/api'} rel="noreferrer">
               <VerticalAlignBottomOutlined /> Java SDK
             </a>
           </Button>
